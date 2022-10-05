@@ -32,7 +32,7 @@ checkButton.addEventListener("click",function checkBillamountandCashgiven() {
     
     {
         
-        if(cashGiven.value >= billAmount.value) 
+        if(Number(cashGiven.value) >= Number(billAmount.value)) //adding number method cos it is showing error msgs with some true conditions
         {
             const amountTobeReturned = cashGiven.value - billAmount.value;
 
